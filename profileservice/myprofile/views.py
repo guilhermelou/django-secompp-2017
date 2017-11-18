@@ -10,3 +10,19 @@ from django.views.generic import View, CreateView, ListView, DetailView,UpdateVi
 class ListProfileView(ListView):
     model = Profile
 
+
+class CreateProfileView(CreateView):
+    model = Profile
+
+
+class DetailProfileView(DetailView):
+    model = Profile
+
+
+class UpdateProfileView(UpdateView):
+    model = Profile
+
+
+class DeleteProfileView(DeleteView):
+    model = Profile
+
