@@ -15,11 +15,28 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from myprofile.api.urls import router as myprofile_router
+from rest_framework.authtoken import views as drf_views
+
+from main import routers
+
+router = routers.DefaultRouter()
+router.extend(myprofile_router)
+
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+
     url(r'^profile/', include('myprofile.urls', namespace="myprofile")),
-    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+
+    url(r'^api-auth/',
+        include('rest_framework.urls', namespace='rest_framework')),
+
+    url(r'^api-token-auth/', drf_views.obtain_auth_token),
+
+    url(r'^api/', include(router.urls, namespace='api')),
+
     url(r'^', include('main.urls', namespace="main")),
 
 ]
