@@ -6,5 +6,8 @@ from myprofile.models import *
 
 # Register your models here.
 
+admin.site.register(Heart)
+admin.site.register(Rate)
+admin.site.register(Message)
 admin.site.register(Profile)
 
