@@ -1,0 +1,8 @@
+<form action="." method="post">
+    <h4>Tem certeza que deseja remover "{{ object }}"?</h4>
+
+    {% csrf_token %}
+            <a href="/" class="">Cancelar</a>
+            <input class="" type="submit" value="Confirmar" />
+       </div>
+   </form>

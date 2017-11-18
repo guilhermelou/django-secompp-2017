@@ -14,10 +14,10 @@ urlpatterns = [
     url(r'^(?P<pk>\d+)/$', myprofile_views.DetailProfileView.as_view(),
         name='profile_detail'),
 
-    url(r'^(?P<pk>\d+)/update$', myprofile_views.UpdateProfileView.as_view(),
+    url(r'^(?P<pk>\d+)/update/$', myprofile_views.UpdateProfileView.as_view(),
         name='profile_update'),
 
-    url(r'^(?P<pk>\d+)/delete$', myprofile_views.DeleteProfileView.as_view(),
+    url(r'^(?P<pk>\d+)/delete/$', myprofile_views.DeleteProfileView.as_view(),
         name='profile_delete'),
 ]
 
