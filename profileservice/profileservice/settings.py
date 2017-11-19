@@ -25,7 +25,7 @@ SECRET_KEY = '8cq@bh0&v5_f_+o0#ze3dg@tg2-n7m=@z5jae3*w9jtaex&lsh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['profileservice.lourencosanti.com']
+ALLOWED_HOSTS = ['.profileservice.lourencosanti.com']
 
 
 # Application definition
