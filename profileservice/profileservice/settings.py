@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'myprofile.apps.MyprofileConfig',
     'main.apps.MainConfig',
     'rest_framework',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
