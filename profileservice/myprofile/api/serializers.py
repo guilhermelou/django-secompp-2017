@@ -48,3 +48,10 @@ class UserSerializer(serializers.ModelSerializer):
 		)
 		return user
 
+
+class HeartSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Heart
+        fields = ('id', 'profile_to', 'profile_from')
+
