@@ -1,9 +1,7 @@
 from rest_framework import viewsets, mixins
 from rest_framework.authentication import (SessionAuthentication,
-                                           BasicAuthentication,
                                            TokenAuthentication)
-from rest_framework.permissions import (IsAuthenticated,
-                                        IsAuthenticatedOrReadOnly)
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from django.contrib.auth.models import User
 
 from main.api.permissions import IsOwnerOrReadOnly

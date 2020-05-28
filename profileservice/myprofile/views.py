@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from django.views.generic import (View, CreateView, ListView, DetailView,
+from django.views.generic import (CreateView, ListView, DetailView,
                                   UpdateView, DeleteView)
 from django.urls import reverse_lazy
 
