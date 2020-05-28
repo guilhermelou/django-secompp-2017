@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
 from django.conf.urls import url
+
 from myprofile import views as myprofile_views
-#from django.contrib.auth.decorators import login_required, permission_required
 
 
 urlpatterns = [

@@ -13,6 +13,5 @@ class IsFromProfileOrReadOnly(permissions.BasePermission):
         if request.method in permissions.SAFE_METHODS:
             return True
 
-        # Instance must have an attribute named `owner`.
+        # Instance must have an attribute named `profile_from`.
         return obj.profile_from.user == request.user
-
